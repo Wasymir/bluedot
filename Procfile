@@ -1,1 +1,1 @@
-web: uvicorn poem:app --port 14520
+web: uvicorn poem:app --port 14520 --host 0.0.0.0
