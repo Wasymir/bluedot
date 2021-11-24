@@ -1,1 +1,1 @@
-web: uvicorn poem:app --port 14520 --host 0.0.0.0
+ web: gunicorn -w 4 --port 14520 --host 0.0.0.0 -k uvicorn.workers.UvicornWorker poem:app
